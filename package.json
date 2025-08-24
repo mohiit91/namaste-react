@@ -1,0 +1,24 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Tutorial Course",
+  "keywords": [],
+  "homepage": "https://github.com/mohiit91/namaste-react#readme",
+  "bugs": {
+    "url": "https://github.com/mohiit91/namaste-react/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohiit91/namaste-react.git"
+  },
+  "license": "ISC",
+  "author": "Mohit Singh",
+  "type": "commonjs",
+  "main": "createApp.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "parcel": "^2.15.4"
+  }
+}
