@@ -72,3 +72,10 @@ li > img {
   width: 15rem;
   border-radius: 1rem;
 }
+
+.eta{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+
+}

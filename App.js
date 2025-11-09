@@ -3,6 +3,56 @@ import ReactDOM from "react-dom/client";
 import cart from "./images/shopping-cart.png";
 import logo from "./images/logo.png";
 
+const resList = [{
+  key: 1,
+  resName: "Friends Corner",
+  cuisine: "Chinese, Indian",
+  stars: "4.1",
+  eta: "40-45 mins"
+},{
+    key: 2,
+  resName: "Friends Corner",
+  cuisine: "Chinese, Indian",
+  stars: "4.1",
+  eta: "40-45 mins"
+},{
+    key: 3,
+  resName: "Friends Corner",
+  cuisine: "Chinese, Indian",
+  stars: "4.1",
+  eta: "40-45 mins"
+},{
+    key: 4,
+  resName: "Friends Corner",
+  cuisine: "Chinese, Indian",
+  stars: "4.1",
+  eta: "40-45 mins"
+},{
+    key: 5,
+  resName: "Friends Corner",
+  cuisine: "Chinese, Indian",
+  stars: "4.1",
+  eta: "40-45 mins"
+},{
+    key: 6,
+  resName: "Friends Corner",
+  cuisine: "Chinese, Indian",
+  stars: "4.1",
+  eta: "40-45 mins"
+},{
+    key: 7,
+  resName: "Friends Corner",
+  cuisine: "Chinese, Indian",
+  stars: "4.1",
+  eta: "40-45 mins"
+},{
+    key: 8,
+  resName: "Friends Corner",
+  cuisine: "Chinese, Indian",
+  stars: "4.1",
+  eta: "40-45 mins"
+}];
+
 const Heading = () => {
   return (
     <div className="header">
@@ -28,22 +78,27 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="res-container">
-        <Restaurant />
-        <Restaurant />
-        <Restaurant />
+        {resList.map((restaurant) => {
+          return <Restaurant key={restaurant.key}  resName={restaurant.resName} cuisine={restaurant.cuisine} stars={restaurant.stars} eta={restaurant.eta} />
+        })}
+        {/* <Restaurant resName="Friends Corner" cuisine="Chinese, Indian" stars="4.1" eta="40-45 mins" /> */}
+        {/* <Restaurant resName="Green Chick Chop" cuisine="Starters" stars="4.0" eta="20-25 mins" /> */}
+        {/* <Restaurant resName="KFC" cuisine="Fried chicken, Burger" stars="4.3" eta="30-35 mins" /> */}
       </div>
     </div>
   );
 };
 
-const Restaurant = () => {
+const Restaurant = (props) => {
+  const {resName, cuisine, stars, eta} = props;
   return (
     <div className="res-card">
         <img alt="Res-Logo" src={logo}/>
-      <h3>Friends Corner</h3>
-      <h4>Chinese, Indian</h4>
-      <h4>4.1 Stars</h4>
-      <h4>40-45 Mins</h4>
+      <h3>{ resName}</h3>
+      <h4>{cuisine}</h4>
+      <div className="eta">
+      <h4 >🌟{stars}</h4><h4>{eta}</h4>
+   </div>
     </div>
   );
 };
