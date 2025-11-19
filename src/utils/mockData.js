@@ -1,51 +1,51 @@
 const resList = [{
-  key: 1,
-  resName: "Friends Corner",
-  cuisine: "Chinese, Indian",
-  stars: 4.1,
-  eta: "40-45 mins"
+  id: 1,
+  name: "Friends Corner",
+  cuisines: ["Chinese", "Indian"],
+  avgRating: 4.1,
+  sla: {deliveryTime: 30}
 },{
-    key: 2,
-  resName: "Friends Corner",
-  cuisine: "Chinese, Indian",
-  stars: 3.9,
-  eta: "40-45 mins"
+    id: 2,
+  name: "Friends Corner",
+  cuisines: ["Chinese", "Indian"],
+  avgRating: 3.9,
+  sla: {deliveryTime: 30}
 },{
-    key: 3,
-  resName: "Friends Corner",
-  cuisine: "Chinese, Indian",
-  stars: 4.1,
-  eta: "40-45 mins"
+    id: 3,
+  name: "Friends Corner",
+  cuisines: ["Chinese", "Indian"],
+  avgRating: 4.1,
+  sla: {deliveryTime: 30}
 },{
-    key: 4,
-  resName: "Friends Corner",
-  cuisine: "Chinese, Indian",
-  stars: 2.8,
-  eta: "40-45 mins"
+    id: 4,
+  name: "Friends Corner",
+  cuisines: ["Chinese", "Indian"],
+  avgRating: 2.8,
+  sla: {deliveryTime: 30}
 },{
-    key: 5,
-  resName: "Friends Corner",
-  cuisine: "Chinese, Indian",
-  stars: 4.1,
-  eta: "40-45 mins"
+    id: 5,
+  name: "Friends Corner",
+  cuisines: ["Chinese", "Indian"],
+  avgRating: 4.1,
+  sla: {deliveryTime: 30}
 },{
-    key: 6,
-  resName: "Friends Corner",
-  cuisine: "Chinese, Indian",
-  stars: 1,
-  eta: "40-45 mins"
+    id: 6,
+  name: "Friends Corner",
+  cuisines: ["Chinese", "Indian"],
+  avgRating: 1,
+  sla: {deliveryTime: 30}
 },{
-    key: 7,
-  resName: "Friends Corner",
-  cuisine: "Chinese, Indian",
-  stars: 4.1,
-  eta: "40-45 mins"
+    id: 7,
+  name: "Friends Corner",
+  cuisines: ["Chinese", "Indian"],
+  avgRating: 4.1,
+  sla: {deliveryTime: 30}
 },{
-    key: 8,
-  resName: "Friends Corner",
-  cuisine: "Chinese, Indian",
-  stars: 4.1,
-  eta: "40-45 mins"
+    id: 8,
+  name: "Friends Corner",
+  cuisines:["Chinese", "Indian"],
+  avgRating: 4.1,
+  sla: {deliveryTime: 30}
 }];
 
 export default resList;
